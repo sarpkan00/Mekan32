@@ -1,10 +1,9 @@
-var express = require('express');
-var router = express.Router();
 
- module.exports.hakkinda=function(req,res,next) {
-  res.render('hakkinda', { title: 'Hakkında' });
+/* GET home page. */
+
+const hakkinda=function(req, res, next) {
+  res.render('hakkinda', { title: 'Hakkında','footer': 'Sarpkan Savaşkan 2020', });
 }
-
-
-
- 
+module.exports={
+	hakkinda
+}
